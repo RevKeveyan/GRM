@@ -1,0 +1,16 @@
+/* src/App.css */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #d88304;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #d88304 !important;
+}
+
+.carousel-item img {
+  width: 400px !important;
+  height: 400px  !important;
+
+  object-fit: cover; /* Ensures the image covers the whole area without distortion */
+}

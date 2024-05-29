@@ -1,5 +1,6 @@
+// src/components/ImageCarousel.js
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
 import Slide1 from '../../assets/img/slide1.JPG';
 import Slide2 from '../../assets/img/slide2.JPG';
 import Slide3 from '../../assets/img/slide3.JPG';
@@ -15,40 +16,42 @@ import Slide12 from '../../assets/img/slide12.JPG';
 import Slide13 from '../../assets/img/slide13.JPG';
 import Slide14 from '../../assets/img/slide14.JPG';
 import Slide15 from '../../assets/img/slide15.JPG';
+import "./style.scss";
 
-function Slider() {
-  const slides = [
-    Slide1, Slide2, Slide3, Slide4,
-    Slide5, Slide6, Slide7, Slide8,
-    Slide9, Slide10, Slide11, Slide12,
-    Slide13,Slide14,Slide15
-  ];
 
-  const renderSlideItems = () => {
-    return slides.map((slide, index) => (
-      <img
-        key={index}
-        className="w-25"
-        src={slide}
-        alt={`Slide ${index + 1}`}
-         style={{ maxHeight: '400px', objectFit: 'cover', marginRight: '10px' }}
-      />
-    ));
-  };
+const images = [
+  Slide1, Slide2, Slide3, Slide4, Slide5, Slide6, Slide7, Slide8,
+  Slide9, Slide10, Slide11, Slide12, Slide13, Slide14, Slide15
+];
+
+const chunkArray = (array, size) => {
+  const chunkedArr = [];
+  for (let i = 0; i < array.length; i += size) {
+    chunkedArr.push(array.slice(i, i + size));
+  }
+  return chunkedArr;
+};
+
+const ImageCarousel = () => {
+  const validImages = images.length - (images.length % 4);
+  const displayedImages = images.slice(0, validImages);
+  const imageGroups = chunkArray(displayedImages, 4);
 
   return (
-    <Carousel interval={null} style={{ maxHeight: '400px', overflow: 'hidden', marginTop:"10px" }}>
-      <Carousel.Item>
-        <div className="d-flex">{renderSlideItems().slice(0, 4)}</div>
-      </Carousel.Item>
-      <Carousel.Item>
-        <div className="d-flex">{renderSlideItems().slice(4, 8)}</div>
-      </Carousel.Item>
-      <Carousel.Item>
-        <div className="d-flex">{renderSlideItems().slice(8, 12)}</div>
-      </Carousel.Item>
+    <Carousel>
+      {imageGroups.map((group, index) => (
+        <Carousel.Item key={index}>
+          <div className="d-flex justify-content-center">
+            {group.map((image, idx) => (
+              <div key={idx} className="p-2">
+                <img src={image} className="d-block" alt={`Slide ${index * 4 + idx + 1}`} />
+              </div>
+            ))}
+          </div>
+        </Carousel.Item>
+      ))}
     </Carousel>
   );
-}
+};
 
-export default Slider;
+export default ImageCarousel;

@@ -1,0 +1,36 @@
+/* src/App.css */
+.container {
+    text-align: center;
+  }
+  
+  .btn-group .btn {
+    background-color: #d88304;
+    border-color: #d88304;
+    color: white;
+  }
+  
+  .btn-group .btn-outline-primary {
+    color: #000;
+    border-color: #d88304;
+  }
+  
+  .btn-group .btn-outline-primary:hover {
+    background-color: #d88304;
+    color: white;
+  }
+  
+  .page-link {
+    color: #d88304;
+  }
+  
+  .page-item.active .page-link {
+    background-color: #d88304;
+    border-color: #d88304;
+  }
+  
+  .img-fluid {
+    width: 500px;  /* Set the desired width */
+    height: 500px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  

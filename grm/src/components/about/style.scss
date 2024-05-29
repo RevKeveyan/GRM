@@ -1,0 +1,52 @@
+/* src/components/aboutUsStyle.scss */
+.about-us {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: #343a40;
+    }
+  
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.125rem;
+      color: #6c757d;
+    }
+  
+    .icon-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #d88304;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem auto;
+      img {
+        width: 70%;
+        height: 70%;
+      }
+    }
+  
+    .row {
+      margin-bottom: 2rem;
+      justify-content: center;  /* Center the rows */
+    }
+  
+    h5 {
+      font-size: 1.5rem;
+      color: #343a40;
+    }
+  
+    .col-md-10 {
+      text-align: left;  /* Left align text within the column */
+      p {
+        font-size: 1rem;
+        color: #6c757d;
+      }
+    }
+  }
+  
