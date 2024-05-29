@@ -1,0 +1,26 @@
+.navbar-brand {
+  color: #FFF !important;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.nav-link1 {
+  background-color: #FEA906!important;
+  border-radius: 5px!important;
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  margin-right: 2px!important;
+  padding: 5px 10px!important;
+  font-weight: bold!important;
+  transition: background-color 1s!important;
+
+  &:hover {
+    background-color: #d88304!important;
+    color:#FFF!important;
+  }
+
+  &:last-child {
+    margin-right: 0!important;
+  }
+}
