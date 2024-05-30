@@ -1,0 +1,26 @@
+/* src/components/callButtonStyle.scss */
+.call-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d88304;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    text-decoration: none;
+  
+    &:hover {
+      background-color: #a65f02;
+    }
+  
+    svg {
+      font-size: 1.5rem;
+    }
+  }
+  

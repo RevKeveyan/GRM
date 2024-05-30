@@ -1,0 +1,23 @@
+/* src/components/statisticsStyle.scss */
+.statistics {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+  
+    .stat-box {
+      padding: 2rem;
+      background: #343a40;
+      color: #ffffff;
+      border-radius: 10px;
+    }
+  
+    h3 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 1.25rem;
+      margin: 0;
+    }
+  }
+  

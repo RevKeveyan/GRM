@@ -1,0 +1,46 @@
+/* src/components/servicesStyle.scss */
+.services {
+    background-color: #ffffff;
+    padding: 3rem 0;
+  
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 2rem;
+    }
+  
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.125rem;
+      color: #7f8c8d;
+      margin-bottom: 2.5rem;
+    }
+  
+    .service-box {
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      background-color: #f8f9fa;
+      &:hover {
+        transform: translateY(-10px);
+      }
+      .service-icon {
+        font-size: 2.5rem;
+        color: #d88304;
+        margin-bottom: 1rem;
+      }
+      h4 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        color: #7f8c8d;
+      }
+    }
+  }
+  
