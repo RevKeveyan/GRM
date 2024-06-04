@@ -53,3 +53,24 @@
     margin-bottom: 1rem;
   }
 }
+.fa:hover{
+  color:#3b5998;
+  transition: 0.5s all;
+}
+.wa:hover{
+  color:#25D366;
+  transition: 0.5s all;
+}
+.vi:hover{
+  color:#665cac;
+  transition: 0.5s all;
+}
+.phone{
+  margin-right: 5px;
+}
+.list-unstyled{
+  li{
+    display: flex;
+    align-items:center;
+  }
+}

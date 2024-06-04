@@ -3,50 +3,77 @@
         "language":"English",
         "about": "About Us",
         "service": "Services",
-        "contact" : "Contact US"
+        "gallery": "Gallery"
+    },
+    "experience":{
+        "years":"Years of Experience",
+        "customers":"Satisfied Customers",
+        "transports":"Total Transports"
+    },
+    "service":{
+        "title":"Our Services",
+        "subtitle":"We provide the services of a crane operator, a tow truck operator, and offer equipment for various works to meet all your needs.",
+        "service1":{
+            "title":"Crane Operator",
+            "subtitle":"Our experienced crane operators are available for all types of lifting and construction needs."
+        },
+        "service2":{
+            "title":"Tow Truck Operator",
+            "subtitle":"Reliable tow truck services available 24/7 to assist you in any situation."
+        },
+        "service3":{
+            "title":"Equipment Rental",
+            "subtitle":"We provide high-quality equipment for various works, ensuring your projects run smoothly."
+        }
     },
     "about":{
-        "h2":"Why Us?",
-        "p":"Below we will answer why evacuation is inexpensive with us. Our services are without intermediaries, so prices are low. The cost of ordering the transportation of a passenger car starts from 5000 AMD. We evacuate special equipment from 7000 AMD. Transportation of a jeep, minivan or gazelle will also cost inexpensively - from 7,000 drams.",
-        "p2": "The price in marz is calculated by agreement. This makes transportation transparent and cheap for the client. The operator makes accurate calculations and reports the final cost before calling. The price in marz is calculated by agreement. This makes transportation transparent and cheap for the client. The operator makes accurate calculations and reports the final cost before calling.",
-        "p3":"Exceptions may be made if...",
-        "li1": "in the case of locked wheels, the price increases,",
-        "li2": "change of route in the city, the price increases,",
-        "li3": "refuse evacuation - 50% of the order,",
-        "li4": "downtime due to the client's fault 2500 drams for 30 minutes,"
+       "title":"About Us",
+       "subtitle":"We are a transportation company offering various services including tow trucks, manipulators, taps, tractors, Truck, and drilling rigs.",
+        "vehicles":{
+            "tow":{
+                "title":"Tow Truck",
+                "subtitle":"Our tow truck service is reliable and available 24/7. We have a fleet of modern tow trucks to assist you."
+            },
+            "manipulator":{
+                "title":"Manipulator",
+                "subtitle":"Our manipulators are perfect for lifting and transporting heavy loads with precision and safety."
+            },
+            "tap":{
+                "title":"Tap",
+                "subtitle":"Our tap services ensure a steady and reliable supply for all your needs, with high-quality equipment."
+            },
+            "tractor":{
+                "title":"Tractor",
+                "subtitle":"Our tractor services are ideal for agricultural, construction, and landscaping projects, providing power and efficiency."
+            },
+            "truck":{
+                "title":"Truck",
+                "subtitle":"Our Truck trucks are reliable and versatile, suitable for various transport needs."
+            },
+            "drill":{
+                "title":"Drilling Rig",
+                "subtitle":"Our drilling rigs are equipped with the latest technology for efficient and precise drilling operations."
+            }
+        } 
     },
-    "servicePrice":{
-        "title":"Prices for towing your car",
-        "subtitle":"We serve Yerevan and the entire region of Armenia",
-        "sedan":{
-            "description":"Sedan evacuation",
-            "price":"starting from AMD 5,000"
+    "galery":{
+        "title":"Image Gallery"
+    },
+    "footer":{
+        "menu":{
+            "title":"Menu",
+            "option1":"Home",
+            "option2":"About Us",
+            "option4":"Gallery"
         },
-        "suv":{
-            "description":"SUV evacuation",
-            "price":"starting from AMD 7,000"
-        },
-        "tracktor":{
-            "description":"Evacuation of special equipment",
-            "price":"starting from AMD 15,000"
-        },
-        "minibus":{
-            "description":"Minibus evacuation",
-            "price":"starting from AMD 10,000"
+        "contacts":{
+            "title":"Contact Us",
+            "option1":"Viber",
+            "option2":"WhatsApp",
+            "option2":"Facebook",
+            "phone1":"Gallery",
+            "phone2":"Gallery",
+            "phone3":"Gallery"
         }
-    },
-    "contactForm":{
-        "name":"Name",
-        "email":"email",
-        "phone":"Phone",
-        "massage":"Massage",
-        "submit":"Send",
-        "error":{
-            "name":"Invalid",
-            "email":"Invalid",
-            "phone":"Invalid",
-            "message":"Invalid"
-        }
-    },
-    "call":"Call Now"
+    }
 }

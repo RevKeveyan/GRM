@@ -46,7 +46,7 @@ function Header() {
           <Nav className="me-auto">
             <Nav.Link href="#about">{t('header.about')}</Nav.Link>
             <Nav.Link href="#tariff">{t('header.service')}</Nav.Link>
-            <Nav.Link href="#contact">{t('header.contact')}</Nav.Link>
+            <Nav.Link href="#contact">{t('header.gallery')}</Nav.Link>
           </Nav>
            <NavDropdown
             style={{ marginRight: "20px" }}
