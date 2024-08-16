@@ -1,17 +1,29 @@
 .navbar-brand {
   color: #FFF !important;
   border-radius: 10px;
-  padding: 5px;
-}
+  // padding: 0 !important;
+  .navbar-nav .nav-item {
+    margin-right: 15px; /* Adjust margin as needed */
 
+  }
+  
+}
+.header{
+  min-height:50px ;
+  .navbar-nav {
+    display: flex;
+    flex-direction: row !important; /* Ensure flex-direction is row for all resolutions */
+  }
+}
 .nav-link1 {
   background-color: #FEA906!important;
-  border-radius: 5px!important;
+  // border-radius: 5px!important;
+  // font-size: 20px !important;
+  min-height: 50px;
+  margin: 0 !important;
   display: flex!important;
   justify-content: center!important;
   align-items: center!important;
-  margin-right: 2px!important;
-  padding: 5px 10px!important;
   font-weight: bold!important;
   transition: background-color 1s!important;
 
@@ -23,4 +35,18 @@
   &:last-child {
     margin-right: 0!important;
   }
+}
+.phone-numbers{
+  justify-content: end !important;
+}
+
+/* Apply flex-direction: row to the .navbar-nav or any specific class */
+
+
+/* Optional: Ensure proper alignment and spacing */
+
+@media (max-width: 768px) {
+    .container{
+        justify-content: center !important;
+    }
 }

@@ -3,12 +3,16 @@
         "language":"English",
         "about": "About Us",
         "service": "Services",
-        "gallery": "Gallery"
+        "gallery": "Gallery",
+        "contact": "Contact Us"
     },
     "experience":{
         "years":"Years of Experience",
         "customers":"Satisfied Customers",
         "transports":"Total Transports"
+    },
+    "h1":{
+        "title":"Tow truck / Construction equipment in Yerevan and regions"
     },
     "service":{
         "title":"Our Services",

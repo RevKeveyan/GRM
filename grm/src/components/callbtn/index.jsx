@@ -6,7 +6,7 @@ import { FaPhone } from 'react-icons/fa';
 
 const CallButton = () => {
   return (
-    <a href="tel:+1234567890" className="call-button">
+    <a href="tel:+37493483814" className="call-button">
       <FaPhone />
     </a>
   );

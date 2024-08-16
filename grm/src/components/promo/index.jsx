@@ -8,16 +8,10 @@ const Header = () => {
     <Navbar
       expand="lg"
       style={{ backgroundColor: "#1A1C19" }}
-      className="justify-content-center"
+      className=" p-0 header "
     >
-      <Container className="justify-content-center">
-        <Navbar.Brand
-          href="mailto:contact@grmservice.am"
-          className="mx-auto navbar-brand"
-        >
-          contact@grmservice.am
-        </Navbar.Brand>
-        <Nav className="mx-auto" >
+      <Container className=" phone-numbers">
+        <Nav className="phone-nav" >
           <Nav.Link href="tel:+37493483814" className="nav-link1">
             <FaPhoneAlt style={{ marginRight: "5px",  }} />
             093-483-814
@@ -25,10 +19,6 @@ const Header = () => {
           <Nav.Link href="tel:+37477965411" className="nav-link1">
             <FaPhoneAlt style={{ marginRight: "5px" }} />
             077-965-411
-          </Nav.Link>
-          <Nav.Link href="tel:+37493451338" className="nav-link1">
-            <FaPhoneAlt style={{ marginRight: "5px" }} />
-            093-451-338
           </Nav.Link>
         </Nav>
       </Container>

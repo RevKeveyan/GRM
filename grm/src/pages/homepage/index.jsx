@@ -10,15 +10,20 @@ import AboutUs from '../../components/about';
 import Statistics from '../../components/statistic';
 import Services from '../../components/services';
 import CallButton from '../../components/callbtn';
-
+import { useTranslation } from 'react-i18next';
+import "./style.scss"
 
 
 function HomePage() {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <Promo/>
       <Header/>
       <Slider/>
+        <div className='main-title'>
+        <h1 >{t('h1.title')}</h1>
+        </div>
       <Statistics/>
       <Services/>
       <AboutUs/>

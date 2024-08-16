@@ -26,7 +26,7 @@ const Statistics = () => {
           <div className="col-md-4 mb-3">
             <div className="stat-box">
               <h3>13+</h3>
-              <p>{t('experience.customers')}</p>
+              <p>{t('experience.transports')}</p>
             </div>
           </div>
         </div>

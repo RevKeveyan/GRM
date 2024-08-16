@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 import enFlag from "../../assets/icons/flags/us.png";
 import ruFlag from "../../assets/icons/flags/ru.png";
 import hyFlag from "../../assets/icons/flags/am.png";
-
+import "./style.scss"
 function Header() {
   const phoneNumber = '098-01-87-88'; 
   const hrPhoneNumber = '37498018788';
@@ -36,7 +36,7 @@ function Header() {
       <Container>
         <Navbar.Brand>
           <div className="align-items-center justify-content-center" style={{ display: "flex" }}>
-            <div style={{ maxWidth: "300px", marginLeft: "10px" }}>
+            <div className="header-menu" style={{ maxWidth: "300px", marginLeft: "10px" ,}}>
               <img style={{ maxWidth: "100%" }} src={Logo} alt="site.am" />
             </div>
           </div>
@@ -44,9 +44,10 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
           <Nav className="me-auto">
-            <Nav.Link href="#about">{t('header.about')}</Nav.Link>
             <Nav.Link href="#tariff">{t('header.service')}</Nav.Link>
-            <Nav.Link href="#contact">{t('header.gallery')}</Nav.Link>
+            <Nav.Link href="#about">{t('header.about')}</Nav.Link>
+            <Nav.Link href="#gallery">{t('header.gallery')}</Nav.Link>
+            <Nav.Link href="#contact">{t('header.contact')}</Nav.Link>
           </Nav>
            <NavDropdown
             style={{ marginRight: "20px" }}

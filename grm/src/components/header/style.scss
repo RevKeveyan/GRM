@@ -1,0 +1,9 @@
+.header-menu{
+    margin-right: 170px;
+}
+
+@media (max-width: 768px) {
+    .header-menu{
+        margin-right: 0 !important;
+    }
+}

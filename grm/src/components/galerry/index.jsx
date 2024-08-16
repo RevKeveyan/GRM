@@ -41,8 +41,8 @@ const ImageGallery = () => {
   };
 
   return (
-    <div className="container text-center">
-      <h1 className="my-4">{t('galery.title')}</h1>
+    <div className="container text-center" id='gallery'>
+      <h2 className="my-4">{t('galery.title')}</h2>
       <div className="row justify-content-center">
         {currentImages.map((image, index) => (
           <div key={index} className="col-md-4 mb-4">

@@ -10,19 +10,25 @@ const Footer = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <footer className="footer bg-dark text-white py-4">
+    <footer className="footer bg-dark text-white py-4" id='contact'>
       <div className="container">
         <div className="row">
           <div className="col-md-4 text-center mb-3 footer-logo">
             <img src={Logo} alt="Logo" className="img-fluid" />
           </div>
-          <div className="col-md-4 text-center mb-3">
-            <h5>{t('footer.menu.title')}</h5>
-            <ul className="list-unstyled">
-              <li><a href="/" className="text-white">{t('footer.menu.option1')}</a></li>
-              <li><a href="/aboutus" className="text-white">{t('footer.menu.option2')}</a></li>
-              <li><a href="/gallery" className="text-white">{t('footer.menu.option4')}</a></li>
-            </ul>
+          <div className="col-md-4 text-center mt-3">
+            <div className="map-responsive">
+              {/* <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d319.6008610516688!2d45.128851527711475!3d40.351818652810884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sam!4v1723719468354!5m2!1sru!2sam"
+                maxWidth="600px"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                aria-hidden="false"
+                tabIndex="0"
+              ></iframe> */}
+            </div>
           </div>
           <div className="col-md-4 text-center mb-3">
             <h5>{t('footer.contacts.title')}</h5>
@@ -57,6 +63,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className='copytext'>© 2024 grmservice.am - Բոլոր իրավունքները պաշտպանված են</div>
     </footer>
   );
 };

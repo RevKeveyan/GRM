@@ -1,4 +1,9 @@
 /* src/components/servicesStyle.scss */
+// .service-wrapper{
+//   min-height: 300px;
+//   max-height: 300px;
+//   overflow: auto;
+// }
 .services {
     background-color: #ffffff;
     padding: 3rem 0;
@@ -22,6 +27,13 @@
       border-radius: 10px;
       transition: transform 0.3s;
       background-color: #f8f9fa;
+      min-height: 300px;
+      max-height: 300px;
+      overflow: hidden;
+    .service-p{
+      max-height: 250px;
+      overflow: auto;
+    }
       &:hover {
         transform: translateY(-10px);
       }
@@ -33,7 +45,6 @@
       h4 {
         font-family: 'Roboto', sans-serif;
         font-size: 1.5rem;
-        color: #2c3e50;
         margin-bottom: 1rem;
       }
       p {
@@ -43,4 +54,9 @@
       }
     }
   }
-  
+
+  .service-subtitle{
+    color: #000 !important;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
